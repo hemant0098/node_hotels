@@ -21,15 +21,11 @@ const personRoutes = require("./routes/personRoutes.js");
 app.use("/person", personRoutes);
 
 
-
-
-
-
 app.listen(2000, () => {
   console.log("listening on port: 2000");
 });
 
-// console.log("Hey there this our first program");
+
 
 
 
