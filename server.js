@@ -4,6 +4,7 @@ const app = express();
 
 const db = require("./db");
 
+const Port = process.env.Port || 3000;
 
 const menuItem = require("./models/menuItem.js");
 
@@ -20,8 +21,7 @@ app.use("/menu", menuRoutes);
 const personRoutes = require("./routes/personRoutes.js");
 app.use("/person", personRoutes);
 
-
-app.listen(2000, () => {
+app.listen(Port, () => {
   console.log("listening on port: 2000");
 });
 
